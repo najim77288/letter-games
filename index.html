@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="">
+     <main class="min-h-screen bg-[#010313] bg-[url(images/background.png)] bg-no-repeat bg-center">
+        <!-- Home screen -->
+        <section class="home min-h-screen text-white flex justify-center flex-col items-center">
+          <div class="flex flex-col items-center gap-10">
+            <h1 class="text-8xl font-fira code uppercase">Alfa clash pro</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, fuga.</p>
+            <button onclick="play()" class="btn bg-lime-400 text-white px-10 text-2xl">Play Now</button>
+          </div>   
+        </section>
+        <!--  -->
+        <section class=" hidden playground">
+
+            <div class="flex flex-col items-center gap-20">
+                <div class="artboard artboard-horizontal phone-6 border-[20px] rounded-2xl border-[#010313CC] bg-[#FFFFFFB3]">
+                    <div class=" flex justify-center">
+                        <p class="bg-[#2F2941] px-6 text-white pb-4 rounded-b-xl ">Don't watch keyboard  while playing...</p>
+                    </div>
+                   <div class="flex justify-center items-center h-full">
+                    <p class="text-black font-bold text-9xl" >Y</p>
+                   </div>
+                </div>
+                <!-- playgroun start-->
+                <!-- key board start -->
+               <div>
+                   <div class=" flex justify-center gap-1 my-1 w-full">
+                       <kbd class="kbd">q</kbd>
+                       <kbd class="kbd">w</kbd>
+                       <kbd class="kbd">e</kbd>
+                       <kbd class="kbd">r</kbd>
+                       <kbd class="kbd">t</kbd>
+                       <kbd class="kbd">y</kbd>
+                       <kbd class="kbd">u</kbd>
+                       <kbd class="kbd">i</kbd>
+                       <kbd class="kbd">o</kbd>
+                       <kbd class="kbd">p</kbd>
+                     </div> 
+                     <div class="flex justify-center gap-1 my-1 w-full">
+                       <kbd class="kbd">a</kbd>
+                       <kbd class="kbd">s</kbd>
+                       <kbd class="kbd">d</kbd>
+                       <kbd class="kbd">f</kbd>
+                       <kbd class="kbd">g</kbd>
+                       <kbd class="kbd">h</kbd>
+                       <kbd class="kbd">j</kbd>
+                       <kbd class="kbd">k</kbd>
+                       <kbd class="kbd">l</kbd>
+                     </div> 
+                     <div class="flex justify-center gap-1 my-1 w-full">
+                       <kbd class="kbd">z</kbd>
+                       <kbd class="kbd">x</kbd>
+                       <kbd class="kbd">c</kbd>
+                       <kbd class="kbd">v</kbd>
+                       <kbd class="kbd">b</kbd>
+                       <kbd class="kbd">n</kbd>
+                       <kbd class="kbd">m</kbd>
+                       <kbd class="kbd">/</kbd>
+               </div>
+                 </div>
+                 <div class="flex justify-between w-3/4">
+                    <button class="btn rounded-full  bg-blue-700 p-5">
+                        Life
+                        <img src="./images/life.png" alt="">
+                      </button>
+                    <button class="btn rounded-full bg-purple-900 p-4">
+                        Score
+                        <img src="./images/dolar.png" alt="">
+                      </button>
+                  </div>
+              </div>
+
+              <!-- life screen -->
+        </section>
+
+        <!-- Score section Start from here -->
+        <section class="score flex justify-center items-center min-h-screen hidden">
+            <div class="text-white text-center space-y-6 bg-[#FFFFFF33] p-4 rounded-lg">
+                <h1>
+                    <span class="font-extrabold">Score:</span>
+                    <span>14</span>
+                </h1>
+                <button class="btn">Play again</button>
+                <p>Practice will make you Pro</p>
+            </div>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
